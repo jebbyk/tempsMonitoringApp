@@ -4,7 +4,10 @@ run app:
 
 
 requests:
-- {POST} api/sensor-readings ['sensor_uuid', 'temperature']
+- {POST} api/sensor-readings 
+  
+   `['reading': ['sensor_uuid', 'temperature']]`
+
 - {GET} api/sensor-readings/get-average 
   
   `['filtering': ['sensor_uuid', 'created_at_from', 'created_at_to]]`
