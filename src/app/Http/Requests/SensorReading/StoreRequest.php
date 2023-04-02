@@ -25,7 +25,7 @@ final class StoreRequest extends FormRequest
     {
         $this->merge([
             'sensor_uuid' => $this->reading['sensor_uuid'],
-            'temperature' => $this->reading['temperature'],
+            'temperature' => (int) ($this->reading['temperature'] * 1000),//prevent FP errors
         ]);
     }
 
