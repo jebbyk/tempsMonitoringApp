@@ -1,5 +1,5 @@
 <?php
-namespace App\DataObject\SensorReading;
+namespace App\DataObjects\SensorReading;
 
 use Spatie\LaravelData\Attributes\MapInputName;
 use Spatie\LaravelData\Attributes\MapOutputName;
@@ -11,6 +11,7 @@ use Spatie\LaravelData\Mappers\SnakeCaseMapper;
 final class StoreData extends Data
 {
     public function __construct(
-        public string $sensorIp,
+        public string $sensorUuid,
+        public int $temperature,
     ){}
 }

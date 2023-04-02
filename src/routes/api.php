@@ -14,5 +14,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::post('api/sensor-readings', [SensorReadingsController::class, 'store'])->name('api.sensor-readings.store');
-Route::post('api/sensor-readings', [SensorReadingsController::class, 'getMiddleTemperature'])->name('api.sensor-readings.get-average');
+Route::post('/sensor-readings', [SensorReadingsController::class, 'store'])->name('api.sensor-readings.store');
+Route::get('/sensor-readings/get-average', [SensorReadingsController::class, 'getMiddleTemperature'])->name('api.sensor-readings.get-average');

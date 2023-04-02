@@ -11,6 +11,6 @@ use Spatie\LaravelData\Mappers\SnakeCaseMapper;
 final class IndexData extends Data
 {
     public function __construct(
-        public array $filtering,
+        public array $filtering = [],
     ){}
 }

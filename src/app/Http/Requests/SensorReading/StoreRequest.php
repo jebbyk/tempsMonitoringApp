@@ -2,8 +2,8 @@
 
 namespace App\Http\Requests\SensorReading;
 
+use App\DataObjects\SensorReading\StoreData;
 use Illuminate\Foundation\Http\FormRequest;
-use StoreData;
 
 
 final class StoreRequest extends FormRequest

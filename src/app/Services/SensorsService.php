@@ -2,7 +2,7 @@
 
 namespace App\Services;
 
-use App\DataObjects\Sensor\StoreData;
+use app\DataObjects\Sensor\StoreData;
 use App\Models\Sensor;
 
 final class SensorsService
