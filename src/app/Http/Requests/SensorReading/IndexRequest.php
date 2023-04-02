@@ -6,7 +6,7 @@ use Illuminate\Foundation\Http\FormRequest;
 use IndexData;
 
 
-class IndexRequest extends FormRequest
+final class IndexRequest extends FormRequest
 {
     final public function rules(): array
     {

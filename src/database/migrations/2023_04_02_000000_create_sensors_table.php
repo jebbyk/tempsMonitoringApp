@@ -14,6 +14,9 @@ return new class extends Migration
         Schema::create('sensors', function (Blueprint $table) {
             $table->uuid()->primary();
 
+            $table->boolean('can_report')->default(true);
+            $table->boolean('sensor_ip')->nullable()->default(null);
+
             $table->timestamps();
         });
     }

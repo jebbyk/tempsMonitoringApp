@@ -10,6 +10,7 @@ class SensorFactory extends Factory
     {
         return [
             'uuid' => $this->faker->unique()->uuid,
+            'can_report' => true,
         ];
     }
 }

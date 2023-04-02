@@ -12,7 +12,7 @@ class SensorReadingFactory extends Factory
 
         return [
             'sensor_uuid' => Sensor::factory(),
-            'value' => $this->faker->numberBetween(-999999, 999999),
+            'temperature' => $this->faker->numberBetween(-999999, 999999),
         ];
     }
 }

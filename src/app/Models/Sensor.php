@@ -12,13 +12,17 @@ use Illuminate\Support\Collection;
  *
  * @property SensorReading|Collection $readings
  */
-class Sensor extends Model
+final class Sensor extends Model
 {
     use HasFactory;
 
     protected $primaryKey = 'uuid';
 
     public $incrementing = false;
+
+    protected $fillable = [
+        'can_report',
+    ];
 
     public function readings(): HasMany
     {

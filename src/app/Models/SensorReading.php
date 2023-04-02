@@ -11,13 +11,13 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @property string $sensor_uuid
  * @property int $value
  */
-class SensorReading extends Model
+final class SensorReading extends Model
 {
     use HasFactory, Filterable;
 
     protected $fillable = [
         'sensor_uuid',
-        'value'
+        'temperature'
     ];
 
     public function sensor(): BelongsTo

@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('sensor_readings', function (Blueprint $table) {
             $table->id();
             $table->foreignUuid('sensor_uuid')->constrained('sensors', 'uuid')->cascadeOnDelete();
-            $table->integer('value');
+            $table->integer('temperature');
             $table->timestamps();
         });
     }

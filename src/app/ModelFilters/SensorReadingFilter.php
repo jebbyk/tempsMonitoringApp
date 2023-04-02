@@ -5,7 +5,7 @@ namespace App\ModelFilters;
 use Carbon\Carbon;
 use EloquentFilter\ModelFilter;
 
-class SensorReadingFilter extends ModelFilter
+final class SensorReadingFilter extends ModelFilter
 {
     public function sensorUuid(string $uuid): SensorReadingFilter
     {

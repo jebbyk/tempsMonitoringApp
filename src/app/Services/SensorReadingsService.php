@@ -2,13 +2,12 @@
 
 namespace App\Services;
 
-use App\Http\Requests\SensorReading\IndexRequest;
+use App\DataObject\SensorReading\StoreData;
+use App\DataObjects\SensorReading\IndexData;
 use App\Models\SensorReading;
 use Illuminate\Support\Collection;
-use IndexData;
-use StoreData;
 
-class SensorReadingsService
+final class SensorReadingsService
 {
 
     public function index(IndexData $data): Collection
@@ -21,7 +20,7 @@ class SensorReadingsService
     public function getMiddleTemperature(IndexData $data): int
     {
         $readings = $this->index($data);
-        $sum = $readings->sum('value');
+        $sum = $readings->sum('temperature');
 
         return $sum / $readings->count();
     }

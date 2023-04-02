@@ -7,7 +7,7 @@ use App\Http\Requests\SensorReading\StoreRequest;
 use App\Services\SensorReadingsService;
 use Illuminate\Http\JsonResponse;
 
-class SensorReadingsController
+final class SensorReadingsController
 {
     public function __construct(private SensorReadingsService $readingsService){}
 
