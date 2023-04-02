@@ -2,9 +2,7 @@
 
 namespace Database\Seeders;
 
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
-use Database\Factories\SensorFactory;
-use Database\Factories\SensorReadingFactory;
+use App\Models\SensorReading;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
