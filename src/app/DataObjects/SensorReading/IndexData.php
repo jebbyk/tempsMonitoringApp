@@ -10,6 +10,6 @@ use Spatie\LaravelData\Mappers\SnakeCaseMapper;
 class IndexData extends Data
 {
     public function __construct(
-        protected array $filtering,
+        public array $filtering,
     ){}
 }

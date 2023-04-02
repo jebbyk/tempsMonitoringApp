@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\SensorReading\IndexRequest;
 use App\Http\Requests\SensorReading\StoreRequest;
+use App\Services\SensorReadingsService;
 use Illuminate\Http\JsonResponse;
 
 class SensorReadingsController

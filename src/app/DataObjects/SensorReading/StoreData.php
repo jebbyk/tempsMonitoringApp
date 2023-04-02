@@ -10,7 +10,7 @@ use Spatie\LaravelData\Mappers\SnakeCaseMapper;
 class StoreData extends Data
 {
     public function __construct(
-        protected string $sensorUuid,
-        protected int $value,
+        public string $sensorUuid,
+        public int $value,
     ){}
 }
