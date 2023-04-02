@@ -9,7 +9,7 @@ final class StoreRequest extends FormRequest
     final public function rules(): array
     {
         return [
-            'sensor_ip' => ['required', 'exists:sensors,uuid'],
+            'sensor_ip' => ['required', 'string'],
         ];
     }
 
